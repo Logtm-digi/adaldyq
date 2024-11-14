@@ -497,3 +497,31 @@ h1, p {
         width: 90%; /* Уменьшение размера видео для мелких экранов */
     }
 }
+/* Основной стиль для секции видео */
+.videosituation {
+    padding: 20px;
+    text-align: center;
+}
+
+.videosituation h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Стиль для видео, чтобы оно адаптировалось */
+.videosituation video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Скругление углов для эстетики */
+}
+
+/* Адаптивность для более мелких экранов */
+@media (max-width: 768px) {
+    .videosituation h2 {
+        font-size: 1.2em;
+    }
+    
+    .videosituation video {
+        width: 90%; /* Уменьшение размера видео для мелких экранов */
+    }
+}
