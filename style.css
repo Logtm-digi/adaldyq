@@ -1,0 +1,490 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Устанавливаем картинку в фон и подстраиваем под размер экрана */
+    background-image: url('media/IMG_0143-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Создаем слой с размытием */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/IMG_0143-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Устанавливаем нужное значение размытия */
+    z-index: -1; /* Размещаем слой за содержимым */
+}
+.guidelines-objectivess .qr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header және логотип */
+header {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+/* Марафон қағидалары және міндеттері */
+.guidelines-objectives {
+    padding: 30px;
+    background-color: #f2f5f8; /* Ашық сұр түс */
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px; /* Орталықтау */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Жұмсақ көлеңке */
+}
+
+.guidelines-objectives h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.guidelines-objectives ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Жағдайды жазуға арналған аймақ */
+.situation {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+}
+
+.situation textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.situation button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.situation button:hover {
+    background-color: #45a049;
+}
+.videosituation {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Талқылау аймағы */
+.discussion {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Видео дәлелдер */
+.video-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    color: #4CAF50;
+}
+
+/* Видео дәлелдер */
+.video-section {
+    padding: 20px;
+    background-color: #f5f5f5; /* Светло-серый фон */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px; /* Ограничение по ширине */
+}
+
+.video-section h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+/*Картинки */
+.image-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-section h2 {
+    color: #4CAF50;
+}
+
+.image-section {
+    padding: 20px;
+    background-color: #f5f5f5; /* Светло-серый фон */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+    margin: 20px auto;
+    width: 100px;
+    max-width: 100px; /* Ограничение по ширине */
+}
+
+.image-section h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.image {
+    display: inline-block;
+    width: 30%;
+    margin-right: 40px;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Более заметная тень */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.image:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+image {
+    width: 10%;  
+    height: auto;
+    border-radius: 5px;
+}
+
+.image p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Видео блоки */
+.video {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Более заметная тень */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.video:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+.videosituation-vide{
+    max-width: 150px;
+}
+/* Кері байланыс */
+.feedback-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Төменгі бөлім */
+footer {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+/* Талқылау аймағы */
+.videosituation {
+    padding: 30px;
+    background-color: #f2f5f8; /* Ашық сұр түс */
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 30%;
+    max-width: 300px; /* Орталықтау */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Жұмсақ көлеңке */
+}
+
+.videosituation h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.videosituation p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+.videosituation {
+    padding-left: 255px;
+    padding-right: 255px;
+    background-color: #f2f5f8; /* Ашық сұр түс */
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 350px; /* Орталықтау */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Жұмсақ көлеңке */
+}
+
+.situation h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.situation p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+/* Жағдайды жазу аймағы */
+.discussion {
+    padding: 30px;
+    background-color: #f9f9f9; /* Ашық түс */
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px; /* Орталықтау */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Жұмсақ көлеңке */
+}
+
+.discussion h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.discussion textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.discussion button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.discussion button:hover {
+    background-color: #45a049;
+}
+/* Талқылау, Жағдайды жазыңыз және Кері байланыс аймақтарын стильдеу */
+.situation, .discussion, #commentsSection {
+    padding: 30px;
+    background-color: #f2f5f8;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#commentsSection {
+    background-color: #ffffff;
+}
+
+#commentsSection h2 {
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Комментарий картасын стильдеу */
+.comment-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.comment-actions {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.comment-actions button {
+    background: none;
+    color: #4CAF50;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.comment-actions button:hover {
+    text-decoration: underline;
+}
+/* Стилизация кнопки очистки */
+button[type="button"] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #ff1a1a;
+}
+header {
+    display: flex;
+    align-items: center;  /* Вертикальное выравнивание элементов */
+    justify-content: flex-start;  /* Логотип слева */
+    height: 100px;  /* Высота header */
+    padding: 10px;
+}
+
+.logo {
+    flex: 0 0 auto; /* Логотип остается фиксированным слева */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;  /* Текст размещается вертикально */
+    justify-content: center;  /* Центрируем текст по вертикали */
+    margin-left: 20px; /* Отступ между логотипом и текстом */
+    text-align: center;  /* Центрируем текст по горизонтали */
+    flex-grow: 1;  /* Занимает оставшееся пространство */
+}
+
+h1, p {
+    margin: 0;          /* Убираем отступы вокруг текста */
+    font-size: 18px;    /* Размер шрифта */
+}
+#commentsContainer {
+    max-height: 300px; /* Задайте максимальную высоту контейнера */
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    border: 1px solid #ccc; /* Добавляем рамку для визуального оформления */
+    padding: 10px; /* Отступы внутри контейнера */
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 18px; /* Уменьшенный шрифт для мобильных устройств */
+    }
+
+    header p {
+        font-size: 14px; /* Уменьшенный шрифт для мобильных устройств */
+    }
+}
