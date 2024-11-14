@@ -488,3 +488,12 @@ h1, p {
         font-size: 14px; /* Уменьшенный шрифт для мобильных устройств */
     }
 }
+@media (max-width: 768px) {
+    .videosituation h2 {
+        font-size: 1.2em;
+    }
+    
+    .videosituation video {
+        width: 90%; /* Уменьшение размера видео для мелких экранов */
+    }
+}
